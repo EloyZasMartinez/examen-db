@@ -1,0 +1,38 @@
+1.-select codigo_oficina,ciudad from oficina;
+
+bcn-es  barcelona
+9 filas
+
+2.-select codigo_pedido,codigo_cliente,fecha_esperada,fecha_entrega from pedido WHERE fecha_entrega>fecha_esperada;
+ 9   1   2008-12-27  2008-12-28
+ 32 filas
+
+ 3.-SELECT ciudad,telefono FROM oficina WHERE pais="España";
+ barcelona +34933561182
+ 3 filas
+
+ 4.-SELECT nombre_cliente FROM cliente WHERE pais="Spain";
+ lasas.sa
+ 27 filas
+
+ 5.-SELECT codigo_pedido FROM pedido WHERE(estado="Rechazado")AND(fecha_pedido>=2009-01-01);
+ 3
+ 24 filas
+
+ 6.-select nombre_cliente, nombre_contacto, apellido_contacto FROM cliente;
+ goldfihs garden daniel g goldfish
+ 36 filas
+
+ 7.-SELECT nombre_cliente, nombre_contacto  FROM cliente WHERE codigo_cliente NOT in(SELECT codigo_cliente FROM pago GROUP by codigo_cliente);
+ lasas s.a. antonio
+ 18 filas
+
+ 8.-SELECT linea_direccion1, linea_direccion2 FROM oficina WHERE codigo_oficina =(SELECT codigo_oficina FROM empleado WHERE codigo_empleado =(select codigo_empleado_rep_ventas from cliente where ciudad="Fuenlabrada"));
+ bulevar indalecio prieto, 32
+ 1 fila
+
+
+9.-SELECT nombre_cliente from cliente WHERE codigo_cliente =(select codigo_cliente from pedido WHERE fecha_entrega>fecha_esperada);
+goldenfish garden
+1fila
+
