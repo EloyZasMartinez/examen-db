@@ -44,4 +44,6 @@ or-127
 australia 2
 5 filas
 
-12.-
+12.-select  count(codigo_empleado)from empleado
+31 
+1fila
