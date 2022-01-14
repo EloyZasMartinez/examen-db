@@ -36,3 +36,8 @@ bcn-es  barcelona
 goldenfish garden
 1fila
 
+10.- select codigo_producto from detalle_pedido where codigo_producto!=(select codigo_producto FROM detalle_pedido WHERE codigo_pedido=(select codigo_pedido FROM pedido))
+or-127
+290 filas
+
+11.-
