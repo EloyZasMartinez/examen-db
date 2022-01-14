@@ -40,4 +40,8 @@ goldenfish garden
 or-127
 290 filas
 
-11.-
+11.-SELECT pais,count(codigo_cliente) FROM cliente group by pais
+australia 2
+5 filas
+
+12.-
