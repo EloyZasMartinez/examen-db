@@ -40,13 +40,17 @@ goldenfish garden
 or-127
 290 filas
 
-11.-SELECT pais,count(codigo_cliente) FROM cliente group by pais
+11.-SELECT pais,count(codigo_cliente) FROM cliente group by pais;
 australia 2
 5 filas
 
-12.-select  count(codigo_empleado)from empleado
+12.-select  count(codigo_empleado)from empleado;
 31 
 1fila
 
-14select nombre_cliente, max(limite_credito) FROM cliente;
+14.-select nombre_cliente, max(limite_credito) FROM cliente;
 tendo garden
+
+15.-select nombre, max(precio_venta) FROM producto;
+trachikarpus fortunei
+
