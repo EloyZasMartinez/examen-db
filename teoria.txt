@@ -47,3 +47,6 @@ australia 2
 12.-select  count(codigo_empleado)from empleado
 31 
 1fila
+
+14select nombre_cliente, max(limite_credito) FROM cliente;
+tendo garden
